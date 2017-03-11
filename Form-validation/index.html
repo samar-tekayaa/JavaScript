@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<script>
+	
+function validateForm(){
+
+var x=document.forms["myForm"]["fname"].value;
+var y=document.forms["myForm"]["fprenom"].value;
+
+if (x=="") {
+
+	alert("saisir votre nom SVP!");
+	return false;
+}
+
+if (y=="") {
+
+	alert("saisir votre prenom SVP!");
+	return false;
+}
+
+}
+
+</script>
+</head>
+<body>
+
+<form name="myForm" action="index.html" onsubmit="return validateForm()" method="post">
+
+	Name: <input type="text" name="fname">
+	<br>
+	Prenom : <input type="text" name="fprenom">
+	<br>
+	<input type="submit" value="submit">
+
+</form>
+
+</body>
+</html>
